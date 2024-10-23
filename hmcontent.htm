@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>Android App User Manual</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { font-size: 1em }
+       .heading1 { color: #000; text-decoration: none; }
+       .heading2 { color: #000; text-decoration: none; }
+       .heading3 { color: #000; text-decoration: none; }
+       .heading4 { color: #000; text-decoration: none; }
+       .heading5 { color: #000; text-decoration: none; }
+       .heading6 { color: #000; text-decoration: none; }
+
+       .hilight1 { color: #FFFFFF; background: #808080; text-decoration: none; }
+       .hilight2 { color: #FFFFFF; background: #808080; text-decoration: none; }
+       .hilight3 { color: #FFFFFF; background: #808080; text-decoration: none; }
+       .hilight4 { color: #FFFFFF; background: #808080; text-decoration: none; }
+       .hilight5 { color: #FFFFFF; background: #808080; text-decoration: none; }
+       .hilight6 { color: #FFFFFF; background: #808080; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { 
+			margin-top:2px; 
+			margin-left:0; 
+			padding: 1px;
+			background-position: 0px 3px !important;
+			background-size: 18px 18px !important;
+            padding-left: 23px !important;
+			}
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+       
+       @media (pointer: coarse) {
+         body    { transform-origin: 0 0;
+		   transform:scale(1.25); 
+		   max-width: 80%;
+       }       
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function(){
+   	   var hiTest = /^hilight/im,
+			parentScope = (parent.hmNavigationFrame);
+		if (parentScope) parent.currentNav("toc");
+		$("a[class^='heading']").on("click",function(event){
+			var doSwipe = (hiTest.test($(this).children("span").first().attr("class")) || false || (parentScope && !parent.hmBrowser.nonDeskTouch));
+			if (doSwipe && parentScope) {
+			window.parent.showNav("toggle");
+			}
+			});
+     });
+   </script>
+      <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="intro.htm" target="hmcontent"><span class="heading1" id="s1" ondblclick="return dblclicked(this)">Introduction</span></a>
+<ul id="ul1" style="list-style-type:none">
+<li class="heading2" id="i1.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.1" href="safety_regulations.htm" target="hmcontent"><span class="heading2" id="s1.1" ondblclick="return dblclicked(this)">Safety engineering</span></a>
+<ul id="ul1.1" style="list-style-type:none">
+<li class="heading3" id="i1.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.1" href="security_warning.htm" target="hmcontent"><span class="heading3" id="s1.1.1">Safety warning</span></a>
+</li>
+<li class="heading3" id="i1.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.2" href="precaution.htm" target="hmcontent"><span class="heading3" id="s1.1.2">Precautionary measures</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="quickstart.htm" target="hmcontent"><span class="heading1" id="s2">Quick start</span></a>
+</li>
+<li class="heading1" id="i3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="connection.htm" target="hmcontent"><span class="heading1" id="s3">If the application cannot find the device...</span></a>
+</li>
+<li class="heading1" id="i4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="main_screen.htm" target="hmcontent"><span class="heading1" id="s4" ondblclick="return dblclicked(this)">Main Screen</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="graphs.htm" target="hmcontent"><span class="heading2" id="s4.1">Graph displaying</span></a>
+</li>
+<li class="heading2" id="i4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="iso_hardness.htm" target="hmcontent"><span class="heading2" id="s4.2">Pseudo-determination of isotopes by radiation hardness</span></a>
+</li>
+<li class="heading2" id="i4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.3" href="graph_settings.htm" target="hmcontent"><span class="heading2" id="s4.3">Graph settings</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="search.htm" target="hmcontent"><span class="heading1" id="s5">Search</span></a>
+</li>
+<li class="heading1" id="i6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href="search_settings.htm" target="hmcontent"><span class="heading1" id="s6">&quot;Search&quot; mode settings</span></a>
+</li>
+<li class="heading1" id="i7" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a7" href="spectrum.htm" target="hmcontent"><span class="heading1" id="s7" ondblclick="return dblclicked(this)">Spectrum</span></a>
+<ul id="ul7" style="list-style-type:none">
+<li class="heading2" id="i7.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.1" href="background.htm" target="hmcontent"><span class="heading2" id="s7.1">Background Usage</span></a>
+</li>
+<li class="heading2" id="i7.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.2" href="isotopes.htm" target="hmcontent"><span class="heading2" id="s7.2">Displaying isotope information</span></a>
+</li>
+<li class="heading2" id="i7.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.3" href="spectrum_settings.htm" target="hmcontent"><span class="heading2" id="s7.3">Spectrum settings</span></a>
+</li>
+<li class="heading2" id="i7.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.4" href="spectrum_view.htm" target="hmcontent"><span class="heading2" id="s7.4">View tab</span></a>
+</li>
+<li class="heading2" id="i7.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.5" href="share.htm" target="hmcontent"><span class="heading2" id="s7.5">Export and import of spectra</span></a>
+</li>
+<li class="heading2" id="i7.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.6" href="calibrate.htm" target="hmcontent"><span class="heading2" id="s7.6">Calibrating the energy scale of the device</span></a>
+</li>
+<li class="heading2" id="i7.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.7" href="sp10bit.htm" target="hmcontent"><span class="heading2" id="s7.7">1024 spectrum channels instead of 256</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i8" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a8" href="spectrogram.htm" target="hmcontent"><span class="heading1" id="s8" ondblclick="return dblclicked(this)">Spectrogram</span></a>
+<ul id="ul8" style="list-style-type:none">
+<li class="heading2" id="i8.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.1" href="spg_spectrum_win.htm" target="hmcontent"><span class="heading2" id="s8.1">Spectrum histogram</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a9" href="activity.htm" target="hmcontent"><span class="heading1" id="s9" ondblclick="return dblclicked(this)">Activity</span></a>
+<ul id="ul9" style="list-style-type:none">
+<li class="heading2" id="i9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.1" href="container.htm" target="hmcontent"><span class="heading2" id="s9.1">Measurement of sample activity in a container</span></a>
+</li>
+<li class="heading2" id="i9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.2" href="point_source.htm" target="hmcontent"><span class="heading2" id="s9.2">Point source activity measurement</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a10" href="log.htm" target="hmcontent"><span class="heading1" id="s10">Log</span></a>
+</li>
+<li class="heading1" id="i11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a11" href="map.htm" target="hmcontent"><span class="heading1" id="s11" ondblclick="return dblclicked(this)">Map and tracks</span></a>
+<ul id="ul11" style="list-style-type:none">
+<li class="heading2" id="i11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.1" href="map_settings.htm" target="hmcontent"><span class="heading2" id="s11.1">Map settings</span></a>
+</li>
+<li class="heading2" id="i11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.2" href="pseudo_tracks.htm" target="hmcontent"><span class="heading2" id="s11.2">Pseudo tracks</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a12" href="camera.htm" target="hmcontent"><span class="heading1" id="s12" ondblclick="return dblclicked(this)">Camera</span></a>
+<ul id="ul12" style="list-style-type:none">
+<li class="heading2" id="i12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.1" href="camera_settings.htm" target="hmcontent"><span class="heading2" id="s12.1">Camera settings</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a13" href="devices.htm" target="hmcontent"><span class="heading1" id="s13">Devices</span></a>
+</li>
+<li class="heading1" id="i14" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a14" href="settings.htm" target="hmcontent"><span class="heading1" id="s14" ondblclick="return dblclicked(this)">Application settings</span></a>
+<ul id="ul14" style="list-style-type:none">
+<li class="heading2" id="i14.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a14.1" href="expert_settings.htm" target="hmcontent"><span class="heading2" id="s14.1">Expert settings</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a15" href="device_settings.htm" target="hmcontent"><span class="heading1" id="s15">Device Settings</span></a>
+</li>
+<li class="heading1" id="i16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a16" href="widgets.htm" target="hmcontent"><span class="heading1" id="s16">App widgets</span></a>
+</li>
+<li class="heading1" id="i17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a17" href="libs.htm" target="hmcontent"><span class="heading1" id="s17">Spectrum, spectrogram and track libraries</span></a>
+</li>
+<li class="heading1" id="i18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a18" href="export_import.htm" target="hmcontent"><span class="heading1" id="s18">Export and import</span></a>
+</li>
+<li class="heading1" id="i19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a19" href="folders.htm" target="hmcontent"><span class="heading1" id="s19">Folders in the libraries</span></a>
+</li>
+<li class="heading1" id="i20" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a20" href="feedback.htm" target="hmcontent"><span class="heading1" id="s20">Feedback</span></a>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon2.png','cicon1.png','cicon9.png');</script>
+</body>
+</html>

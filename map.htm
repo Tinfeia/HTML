@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Map and tracks</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Application RadiaCode equipped with functions of displaying the emission situation on a map in real time, as well as functions of recording routes (“tracks”) and their..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        min-height: 60px; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        background: #F0F0F0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { min-height: 59px;}             
+      #idheader h1 span { color: #000000 }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_white.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_grey.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_yellow.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; }
+	  p.help-url a:link { font-size: 50%; text-decoration: none; color: black; }
+	  p.help-url a:visited { color: black; }
+	  p.help-url a:hover { font-size: 95%; text-decoration: underline; }
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #000000; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #000000; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #000000; }
+      .sync-toc a:hover { text-decoration: underline; }
+	  a#printbuttonlink { cursor: pointer; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em; }  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "map.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Map and tracks</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:middle">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?map.htm" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      &raquo;No topics above this level&laquo;
+      </p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Map and tracks</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="log.htm" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="intro.htm" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="map_settings.htm" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Application RadiaCode equipped with functions of displaying the emission situation on a map in real time, as well as functions of recording routes (“tracks”) and their subsequent download for view.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To access the map, select the “Map” item in the main menu, which is called by tapping the icon <img alt="_NavMenu" width="16" height="14" style="margin:0;width:16px;height:14px;border:none" src="_navmenu.png"/>top left. To record tracks, the app needs access to the location of the device. Also, the location function of the phone/tablet must be enabled.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="Map" width="360" height="677" style="margin:0;width:360px;height:677px;border:none" src="map.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:solid 2px #c0c0c0; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:51px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_settings" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="ic_settings.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1122px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Opens <a href="map_settings.htm" class="topiclink">the settings related to the map</a>. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:51px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_route" width="36" height="36" style="margin:0 auto 0 auto;width:36px;height:36px;border:none" src="ic_route.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1122px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Opens <a href="libs.htm" class="topiclink">track library</a>.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:51px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_cur_location" width="36" height="36" style="margin:0 auto 0 auto;width:36px;height:36px;border:none" src="ic_cur_location.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1122px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Displays a point in the center of the map that corresponds to your current location. A long tap on this icon additionally sets some average map scale.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:51px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_roundgray_wb" width="36" height="36" style="margin:0 auto 0 auto;width:36px;height:36px;border:none" src="ic_roundgray_wb.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1122px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Starts or continues recording a track.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:51px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_map_dose_rate" width="36" height="36" style="margin:0 auto 0 auto;width:36px;height:36px;border:none" src="ic_map_dose_rate.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1122px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Indicates that marker colors are determined from dose rate values. When clicked, switches to the mode of marker coloring by count rate, and the icon on the button is replaced by this: <img alt="ic_map_count_rate" width="36" height="36" style="margin:0;width:36px;height:36px;border:none" src="ic_map_count_rate.png"/> This icon indicates that marker colors are determined by count rate values, and clicking on it switches to the mode of marker coloring by dose rate.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:51px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_more_vert" width="36" height="36" style="margin:0 auto 0 auto;width:36px;height:36px;border:none" src="ic_more_vert.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1122px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Opens a dropdown menu:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Mark</span>: Enter marker flagging mode. In this mode, tapping a marker flags it for later deletion. The flagged markers are white and surrounded by a pink circle.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Delete selected...</span>: After confirmation, delete the flagged markers from the track. Markers are permanently deleted and cannot be recovered.</p></td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:51px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_a" width="36" height="36" style="margin:0 auto 0 auto;width:36px;height:36px;border:none" src="ic_a.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1122px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Automatically colors markers on the map in accordance with the minimum and maximum dose rate/count rate values. A long tap additionally automatically sets the minimum and maximum values of the displayed markers.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:51px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="_Scale" width="31" height="36" style="margin:0 auto 0 auto;width:31px;height:36px;border:none" src="_scale.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1122px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Expands/hides the color bar graph.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Tracks</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">When you record a track, each current location is marked with a circle on the map. The color of the circle corresponds to the emission level or count rate measured at this point, taking into account the color settings on the color scale.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="Track" width="324" height="611" style="margin:0;width:324px;height:611px;border:none" src="track.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The colors of the markers are determined by the dose rate values or, starting with application version 1.30.00, by the count rate values. The display mode is selected using the corresponding button on the toolbar. Tracks recorded with older versions of the software do not contain count rate information, so marker colors will appear the same in both modes. Tracks recorded by a device whose firmware did not yet support energy compensation essentially contain dose rate values that are directly proportional to the count rate.</p>
+<p class="p_Normal">To start recording a track, tap the icon <img alt="ic_roundgray_wb" width="22" height="22" style="margin:0;width:22px;height:22px;border:none" src="ic_roundgray_wb.png"/> at the top left of the screen. You will be prompted to enter a track title. After that, recording will start, and the name of the track will be displayed at the top of the screen under the buttons:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="_Recording" width="100" height="40" style="margin:0;width:100px;height:40px;border:none" src="_recording.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">New points appear on the map, and, accordingly, are remembered in the track only when the location changes. In <a href="settings.htm" class="topiclink">the application settings,</a> you can set the minimum position accuracy. It should be borne in mind that the correctness of determining the location depends on many factors - the quality of the phone's GPS module, the interference situation, etc. In the absence of information from the GPS sensor, the smartphone can determine the location using other sources - cell towers and Wi-Fi networks.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">When first displayed on the map in the dose rate mode, the marker is colored according to the current value of the dose rate transmitted by the device, and surrounded by a thick gray line. The operational value of the dose rate transmitted by the device lags behind the current calendar moment in time. The lag time depends on the rate of change in the radiation situation: with small changes in dose rate values, the lag can be tens of seconds; with sharp changes, the lag is reduced. As data arrives from the device, operational markers corresponding to the calendar time of the received values ​​are repainted in accordance with the accepted value and acquire the status of permanent ones, the thick stroke disappears. You can turn off the thick outline of operational markers in the map settings. Hot markers are not stored in the database.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Track recording continues until it is explicitly stopped and as long as the application is in communication with the device. When the device is reconnected, track recording resumes automatically.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">It should be borne in mind that in the track recording mode, the smartphone consumes a lot of energy and its battery will drain faster. If you do not need to, do not set too small a value for the positioning accuracy in the application settings.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you tap any circle (marker), information corresponding to this point will be displayed - date/time, measured emission level, count rate, and positioning accuracy:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="_MarkerInfo" width="150" height="114" style="margin:0;width:150px;height:114px;border:none" src="_markerinfo.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Touching the information window opens a drop-down menu - with its help you can attach a <a href="camera.htm" class="topiclink">picture</a> to the point, remove the point from the track, or simply close the information window.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Color scale</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The color scale is a quick way to color the track points so that they clearly reflect the changing emission situation. By moving the scale sliders, you can set the minimum dose rate or count rate value, which corresponds to the violet color, and the maximum value, which corresponds to the red one:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="MapScale" width="360" height="678" style="margin:0;width:360px;height:678px;border:none" src="mapscale.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This example shows that the entire range of measured values ​​is approximately 40...77 μR/h. The purple slider is set to 40.5 μR/h, so all points with the same and lower dose rate level will be purple. The red slider is set to 77.2 μR/h, and all points with the same or higher level will be red. All points between 40 and 77 μR/h will have intermediate colors, from violet to red. In the map settings, you can select a palette of colors to display markers.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In the map settings, you can turn on the function of automatic coloring of markers in accordance with the current maximum and maximum measured value.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_SubTitle"><span class="f_SubTitle">Attaching images to track points</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In addition to the entire track, it is possible to attach images to individual track points. Attached images are displayed with a camera symbol:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="_PicsOnMap" width="150" height="89" style="margin:0;width:150px;height:89px;border:none" src="_picsonmap.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">There are two ways to attach a picture to a point on a track:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Take a photo with the <a href="camera.htm" class="topiclink">camera</a>. The picture will be attached to the very last point of the track.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Tap a point on the map. A drop-down menu will open, allowing you to attach a picture to the point.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Tapping the camera icon opens a drop-down menu for image manipulation.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">See also:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="map_settings.htm" class="topiclink">Map settings</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="libs.htm" class="topiclink">Track library</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="pseudo_tracks.htm" class="topiclink">Pseudo tracks</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+
+
+function normHeaders() {
+ var topicHeadHeight =  $("#idheaderbg > table").first().height() + 1,
+	 $topicHeaderBox = $("#idheader"),
+	 $topicContentBox = $("#idcontent"),
+	 $navHeader = $("#navbar", parent.document),			 
+	$navBox = $("div#hmnavframe", parent.document),
+	 navHeaderHeight = $navHeader.height();
+ if (topicHeadHeight != navHeaderHeight) {
+	 $navHeader.css("height",topicHeadHeight + "px");
+	 $navBox.css("top", topicHeadHeight + "px");
+	 $topicHeaderBox.css("height", topicHeadHeight + "px");
+		if ($topicHeaderBox.css("position") == "fixed"){
+			$topicContentBox.css("margin-top", topicHeadHeight + "px");
+			}
+		}
+    }
+			 
+  $(document).ready(function(){
+    $(window).on('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+		$('.hmanchor').css('padding-top', y+20);
+		$("div#hmsplitter", parent.document).css('width', '3px');
+      }
+	normHeaders();
+    });
+    
+	 $(window).resize(); //trigger event for initially small displays
+  });
+ 
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

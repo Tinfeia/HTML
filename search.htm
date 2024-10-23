@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Search</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="The &quot;Search&quot; mode is designed to analyze the operational (&quot;raw&quot;) data of the device and search for a source of radiation or heterogeneity of radiation fields. The data is..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        min-height: 60px; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        background: #F0F0F0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { min-height: 59px;}             
+      #idheader h1 span { color: #000000 }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_white.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_grey.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_yellow.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; }
+	  p.help-url a:link { font-size: 50%; text-decoration: none; color: black; }
+	  p.help-url a:visited { color: black; }
+	  p.help-url a:hover { font-size: 95%; text-decoration: underline; }
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #000000; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #000000; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #000000; }
+      .sync-toc a:hover { text-decoration: underline; }
+	  a#printbuttonlink { cursor: pointer; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em; }  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "search.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Search</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:middle">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?search.htm" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      &raquo;No topics above this level&laquo;
+      </p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Search</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="graph_settings.htm" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="intro.htm" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="search_settings.htm" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">The &quot;Search&quot; mode is designed to analyze the operational (&quot;raw&quot;) data of the device and search for a source of radiation or heterogeneity of radiation fields. The data is displayed in several graphical representations for two measurement channels – count rate and/or dose rate.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The operational data is raw gamma radiation data that is sent to the application from the device in real time every 500 ms. The application stores this data for the last 10 minutes. The values of the operational data vary widely and are characterized by a high random measurement error. With an increase in the level of recorded radiation, this error decreases.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="Search" width="360" height="657" style="margin:0;width:360px;height:657px;border:none" src="search.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The <img alt="_NavButtons0" width="41" height="40" style="margin:0;width:41px;height:40px;border:none" src="_navbuttons0.png"/><span class="f_ImageCaption"> </span>button, when held or pressed, allows you to select display options:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The count rate in the form of an arrow indicator and a graph</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Dose rate in the form of an arrow indicator and a graph</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The count rate and dose rate in the form of arrow indicators</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Graphs always display operational data in the form in which they come from the device, without any processing. The data displayed on the arrow indicator is averaged: the arithmetic mean is calculated over a time interval that can be specified in the settings.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Analog arrow indicator</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The indicator is a fixed linear scale with divisions from 0 to 100 and an arrow. The scale is colored according to the alarm thresholds set in the dosimeter (see <a href="device_settings.htm" class="topiclink">Device settings</a>). To get readings corresponding to the position of the arrow, you need to multiply the value on the scale by the coefficient active in the list to the right of the indicator. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In the center of the arrow indicator is a numeric value that reflects the current value of the data. The units of measurement are located under the indicator. The name of the measured value is displayed in the upper left corner. There is a bright circle marker at the end of the arrow for greater contrast.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">There are two dynamically changing zones along the circumference on the surface of the indicator scale. The blue statistics area displays the maximum and minimum range of values registered since the application was launched or since the statistics were reset.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The cyan zone on top of the blue one displays the oscillation range of the arrow, the boundaries of which dynamically indicate the activity zone and the direction of the arrow displacement.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Graph</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The graph shows the operational data coming from the device. It is similar to the graphs on the <a href="main_screen.htm" class="topiclink">&quot;Charts&quot; tab</a>, with the following features:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Time scales – from 1 to 10 minutes.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The scale of the Y-axis is linear, logarithmic, square root.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Scaling the graph along the Y-axis – over the entire range (up to 10 minutes), or over the area visible on the screen. Manual scaling is not available.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The right border of the graph always corresponds to the current moment in time.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Touching the graph displays a horizontal line that can be moved around the graph to accurately determine the value of the displayed value.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="line-height: 1.28; margin: 0 0 11px 0;"><span style="font-weight: bold;">Control buttons</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="Normal" >
+<tr class="Normal">
+<td class="Normal" style="vertical-align:middle; padding:6px;"><p class="p_Normal"><img alt="_NavButtons0" width="41" height="40" style="margin:0;width:41px;height:40px;border:none" src="_navbuttons0.png"/></p>
+<p class="p_Normal">Switches the displayed charts and indicators in various combinations. A long tap of this button opens a drop-down menu where you can select the desired combination from the list.</p>
+</td>
+</tr>
+<tr class="Normal">
+<td class="Normal" style="vertical-align:middle; padding:6px;"><p class="p_Normal"><img alt="_LiveSettings" width="40" height="40" style="margin:0;width:40px;height:40px;border:none" src="_livesettings.png"/></p>
+<p class="p_Normal">Opens the &quot;Search&quot; mode settings.</p>
+</td>
+</tr>
+<tr class="Normal">
+<td class="Normal" style="vertical-align:middle; padding:6px;"><p class="p_Normal"><img alt="_NavButtons2" width="86" height="39" style="margin:0;width:86px;height:39px;border:none" src="_navbuttons2.png"/></p>
+<p class="p_Normal">Increase or decrease the time scale.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">A long tap of the button increases the zoom to the maximum or decreases to the minimum.</p>
+</td>
+</tr>
+<tr class="Normal">
+<td class="Normal" style="vertical-align:middle; padding:6px;"><p class="p_Normal"><img alt="_clicks" width="78" height="38" style="margin:0;width:78px;height:38px;border:none" src="_clicks.png"/></p>
+<p class="p_Normal">Enables/disables smartphone playback of clicks corresponding to the count rate. Additional click options are available in the <a href="settings.htm" class="topiclink">Application Settings</a>.</p>
+</td>
+</tr>
+<tr class="Normal">
+<td class="Normal" style="vertical-align:middle; padding:6px;"><p class="p_Normal"><img alt="ic_more_vert" width="36" height="36" style="margin:0;width:36px;height:36px;border:none" src="ic_more_vert.png"/></p>
+<p class="p_Normal">Open the drop-down menu. Actions available in the menu:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Reset statistics: Reset the minimum and maximum values of the count rate and dose rate (blue zone on the arrow indicator).</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Zoom out/zoom in (only for landscape orientation of the smartphone screen).</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+
+
+function normHeaders() {
+ var topicHeadHeight =  $("#idheaderbg > table").first().height() + 1,
+	 $topicHeaderBox = $("#idheader"),
+	 $topicContentBox = $("#idcontent"),
+	 $navHeader = $("#navbar", parent.document),			 
+	$navBox = $("div#hmnavframe", parent.document),
+	 navHeaderHeight = $navHeader.height();
+ if (topicHeadHeight != navHeaderHeight) {
+	 $navHeader.css("height",topicHeadHeight + "px");
+	 $navBox.css("top", topicHeadHeight + "px");
+	 $topicHeaderBox.css("height", topicHeadHeight + "px");
+		if ($topicHeaderBox.css("position") == "fixed"){
+			$topicContentBox.css("margin-top", topicHeadHeight + "px");
+			}
+		}
+    }
+			 
+  $(document).ready(function(){
+    $(window).on('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+		$('.hmanchor').css('padding-top', y+20);
+		$("div#hmsplitter", parent.document).css('width', '3px');
+      }
+	normHeaders();
+    });
+    
+	 $(window).resize(); //trigger event for initially small displays
+  });
+ 
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

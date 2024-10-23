@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Spectrum</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="This window displays the energy spectrum of the photon (gamma and X-ray) radiation, typed by the device over a certain period of time. When you connect the device to the..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        min-height: 60px; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        background: #F0F0F0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { min-height: 59px;}             
+      #idheader h1 span { color: #000000 }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_white.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_grey.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_yellow.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; }
+	  p.help-url a:link { font-size: 50%; text-decoration: none; color: black; }
+	  p.help-url a:visited { color: black; }
+	  p.help-url a:hover { font-size: 95%; text-decoration: underline; }
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #000000; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #000000; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #000000; }
+      .sync-toc a:hover { text-decoration: underline; }
+	  a#printbuttonlink { cursor: pointer; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em; }  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "spectrum.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Spectrum</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:middle">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?spectrum.htm" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      &raquo;No topics above this level&laquo;
+      </p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Spectrum</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="search_settings.htm" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="intro.htm" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="background.htm" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">This window displays the energy spectrum of the photon (gamma and X-ray) radiation, typed by the device over a certain period of time. When you connect the device to the smartphone, the app reads the spectrum data from the device. Subsequently, the spectrum graph is updated either automatically at the interval specified in the settings, or manually.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="Spectrum" width="360" height="730" style="margin:0;width:360px;height:730px;border:none" src="spectrum.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">At the top right of the graph you can see: </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>the time for which the spectrum data was accumulated, in the format HH:MM:SS. </p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The average pulse count rate, i.e. the sum of the number of pulses for all channels, divided by the time of data accumulation. </p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Average dose rate of X-ray and gamma radiation over the time of spectrum accumulation.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>X-ray and gamma radiation dose over the accumulation time of the spectrum.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The way the graph is updated, or, for <span style="text-decoration: underline;"><a href="spectrum_view.htm" class="topiclink">the &quot;View Spectrum&quot; window</a>, the name of the spectrum.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In the mode of displaying the graph of difference between spectrum and background the values of count rate and dose rate will be equal to the difference of these values for spectrum and background. The accumulated dose will be calculated by the formula (Ds - Db) * Ts, where Ds is the spectrum dose, Db is the background dose, Ts is the spectrum accumulation time. In difference mode, spectrum information is displayed in italics as a reminder.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The display of each item except the last is controlled by the corresponding setting. Unnecessary data can be turned off to save screen space.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The part of the graph in which the shape of the spectrum should be considered unreliable due to the small volume of events accumulated there is drawn in gray.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Depending on the settings, the X-axis can display either channel numbers or photon energy. The Y-axis can display either the number of pulses or the count rate. The Y-axis scale can be linear or logarithmic.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:solid 2px #c0c0c0; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:70px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_settings" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="ic_settings.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1104px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Opens the <a href="spectrum_settings.htm" class="topiclink">settings related to the spectrum graph</a>.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:70px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 16pt;">Lin.</span></p>
+</td>
+<td style="vertical-align:middle; width:1104px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Select the linear scale of the Y-axis.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:70px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 16pt;">Log.</span></p>
+</td>
+<td style="vertical-align:middle; width:1104px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Select the logarithmic scale of the Y-axis.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:70px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_sp_refresh" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="ic_sp_refresh.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1104px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Refresh spectrum data. The application reads the current data from the device and updates the graph regardless of the update method selected in the settings (manual or automatic).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:70px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_library" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="ic_library.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1104px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Open <a href="background.htm" class="topiclink">spectra library</a>.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:70px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_sp_zoom_in" width="36" height="36" style="margin:0 auto 0 auto;width:36px;height:36px;border:none" src="ic_sp_zoom_in.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1104px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Enlarge the graph (zoom in). The graph can be scrolled horizontally. Long press of this button increases the zoom to the maximum. The current scale value is displayed in the lower left corner of the screen.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:70px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_sp_zoom_out" width="36" height="36" style="margin:0 auto 0 auto;width:36px;height:36px;border:none" src="ic_sp_zoom_out.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1104px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Zoom out. Long press of this button decreases the scale to one.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:70px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_more_horiz" width="36" height="36" style="margin:0 auto 0 auto;width:36px;height:36px;border:none" src="ic_more_horiz.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1104px; padding:2px; border:solid thin #c0c0c0;"><p class="p_Normal">Open the dropdown menu. Actions are available in the menu:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Restart accumulation of</span> spectrum data. Confirmation is requested before restarting.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Share spectrum:</span> Export spectrum data to a text file with the .csv or .xml extension (<a href="share.htm" class="topiclink">export</a>) and &quot;share&quot; this file, i.e. save it in the smartphone memory, send it by mail or via messenger. </p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Save spectrum to library:</span> Save spectrum to database. In the future, the spectrum can be used as a background, shared, etc. If the “Set as current background” option is left enabled in the spectrum saving request window, the saved spectrum is selected as the background to be displayed together with the spectrum. The background name is displayed in the vertical text box along the Y-axis.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Spectrum Information:</span> A window will open with detailed information about the spectrum, background and the difference between them.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Isotope info:</span> Show detailed information about the isotope that corresponds to the tapping point on the plot.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Attach the selected isotope:</span> Plot the lines of the currently displayed isotope or decay chain on the graph. The lines will be displayed in their places when moving the pointer, zooming and flipping the graph, etc., until the lock is explicitly released by the &quot;Unlock selected isotope&quot; menu item.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Detach the selected isotope:</span> Unlock the isotope or decay chain lines set by the &quot;Attach the selected isotope&quot; command.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Device Calibration:</span> Perform the <a href="calibrate.htm" class="topiclink">calibration procedure for the energy scale of the device</a>.</p></td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Tapping the graph</span> at a display scale of x1, displays the cursor lines. The vertical line corresponding to the position on the X-axis can be moved by tapping the screen at the desired point or moving your finger across the screen. The horizontal line is automatically positioned to the position of the pointer on the X-axis.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To display marker lines at a scale greater than x1, do <span style="font-weight: bold;">long tap on the screen</span>, then marker lines will appear. Move the vertical line left and right without lifting your finger from the screen.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If marker lines are present, then a &quot;magnifying glass&quot; (&quot;zoom&quot;) is displayed in the lower corner of the spectrum graph by default - a small window in which a section of the graph corresponding to the vertical marker line is visible at an enlarged scale. The magnifier allows you to position the marker lines on the peaks more precisely. In the <a href="spectrum_settings.htm" class="topiclink">spectrum settings</a>, you can set the position of the magnifier on the chart or turn it off.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Quick double tap</span> toggles the display mode between linear and logarithmic.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">At the bottom of the spectrum window there is a slider that controls <span style="font-weight: bold;">“enhancement”</span> of a histogram. A curve of the following type is superimposed on the graph:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="sp_amplifier" width="218" height="97" style="margin:0;width:218px;height:97px;border:none" src="sp_amplifier.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This allows subtle peaks to appear on the graph. For each channel, the value is calculated by the formula Vn = Vn An F + 1, where:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">n - channel number</p>
+<p class="p_Normal">Vn - spectrum value (number of pulses or count rate) in channel n</p>
+<p class="p_Normal">An - the value at the corresponding point of the amplifying curve</p>
+<p class="p_Normal">F - gain factor, which is set by the slider, from 0 to 5.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In amplification mode with F &gt;= 1, the digitization of the Y axis is not displayed.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Filter Engine</span> applies a smoothing algorithm to the spectrum graph. The higher the filter value, the more the graph is smoothed.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The spectrum graph is also available as a <a href="widgets.htm" class="topiclink">widget</a>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="spectrum.htm" class="topiclink">Background Usage and Spectra Library</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="isotopes.htm" class="topiclink">Displaying isotope information</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="spectrum_settings.htm" class="topiclink">Spectrum settings</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="spectrum_view.htm" class="topiclink">View tab</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="share.htm" class="topiclink">Export and import of spectra</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="calibrate.htm" class="topiclink">Calibrating the energy scale of the device</a></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+
+
+function normHeaders() {
+ var topicHeadHeight =  $("#idheaderbg > table").first().height() + 1,
+	 $topicHeaderBox = $("#idheader"),
+	 $topicContentBox = $("#idcontent"),
+	 $navHeader = $("#navbar", parent.document),			 
+	$navBox = $("div#hmnavframe", parent.document),
+	 navHeaderHeight = $navHeader.height();
+ if (topicHeadHeight != navHeaderHeight) {
+	 $navHeader.css("height",topicHeadHeight + "px");
+	 $navBox.css("top", topicHeadHeight + "px");
+	 $topicHeaderBox.css("height", topicHeadHeight + "px");
+		if ($topicHeaderBox.css("position") == "fixed"){
+			$topicContentBox.css("margin-top", topicHeadHeight + "px");
+			}
+		}
+    }
+			 
+  $(document).ready(function(){
+    $(window).on('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+		$('.hmanchor').css('padding-top', y+20);
+		$("div#hmsplitter", parent.document).css('width', '3px');
+      }
+	normHeaders();
+    });
+    
+	 $(window).resize(); //trigger event for initially small displays
+  });
+ 
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

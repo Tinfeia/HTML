@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Spectrum, spectrogram and track libraries</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="The spectra, spectrograms and tracks storages are called libraries and are stored in the application database. We will call a spectrum, spectrogram and track by the word..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        min-height: 60px; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        background: #F0F0F0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { min-height: 59px;}             
+      #idheader h1 span { color: #000000 }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_white.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_grey.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_yellow.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; }
+	  p.help-url a:link { font-size: 50%; text-decoration: none; color: black; }
+	  p.help-url a:visited { color: black; }
+	  p.help-url a:hover { font-size: 95%; text-decoration: underline; }
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #000000; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #000000; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #000000; }
+      .sync-toc a:hover { text-decoration: underline; }
+	  a#printbuttonlink { cursor: pointer; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em; }  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "libs.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Spectrum, spectrogram and track libraries</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:middle">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?libs.htm" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      &raquo;No topics above this level&laquo;
+      </p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Spectrum, spectrogram and track libraries</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="widgets.htm" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="intro.htm" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="export_import.htm" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">The spectra, spectrograms and tracks storages are called libraries and are stored in the application database. We will call a spectrum, spectrogram and track by the word &quot;object&quot;.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To open a library, tap the <img alt="ic_library" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="ic_library.png"/> symbol on the control bar (toolbar) of the &quot;Spectrum&quot;, &quot;View&quot; or &quot;Spectrogram&quot; tab. The track library is opened by the <img alt="ic_route" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="ic_route.png"/> icon on the map toolbar.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">A list of saved objects is displayed. For each object, its name, which was specified when saving, the recording start date, the serial number of the device and other information corresponding to the type of object are displayed. &nbsp;For tracks that were created by a device with firmware that does not support energy compensation, a yellow icon is displayed in the lower right corner. For <a href="sp10bit.htm" class="topiclink">8-bit spectra</a> created by a device with firmware version less than 4.00, an orange marker with the number 8 is displayed in the lower right corner. For each saved spectrum, its graph in the logarithmic scale, name and accumulation time are displayed.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="SpectrumLib" width="360" height="328" style="margin:0;width:360px;height:328px;border:none" src="spectrumlib.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">It is possible to create <a href="folders.htm" class="topiclink">folders</a> for more convenient organization of the library. You can manage folders through the options menu, which is accessed by tapping the three-dot icon in the top right corner of the screen. The options menu also contains:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Search:</span> An input line appears where you can enter part of the object name. Only object names containing the entered substring will remain on the screen. The search is performed within the displayed folder, i.e. this function essentially works as a filter. To find a object located in a folder, you need to switch the display to &quot;Simple list without folders&quot; mode through the same options menu before searching.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Import object:</span> The system file selector opens. For more information, see &quot;<a href="export_import.htm" class="topiclink">Export and Import</a>&quot;.</p>
+<p class="p_Normal" style="margin: 0 0 2px 0;">&nbsp;</p>
+<p class="p_Normal">Tapping a line opens a dropdown menu:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Open object</span>: &nbsp;Load an object for viewing (the track opens on the map). If the object is a spectrogram and is currently being recorded, it continues in the background. To return to the graph of the spectrogram being recorded, tap the <img alt="ic_more_horiz" width="22" height="22" style="margin:0;width:22px;height:22px;border:none" src="ic_more_horiz.png"/> button on the &quot;Spectrogram&quot; tab and select &quot;Close spectrogram&quot;.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Share object</span>: Export the object data and &quot;share&quot; this file, i.e. save it in smartphone memory, send it by mail or via messenger. For more information, see &quot;<a href="export_import.htm" class="topiclink">Export and Import</a>&quot;.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Rename object</span>: Set a new name for the object.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Edit comment</span>: Set or edit a comment for the object. A comment is an arbitrary text that is displayed for the object in the library in blue.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Delete object</span>: Delete object data from the library.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Move to folder</span>: <a href="folders.htm" class="topiclink">Move</a> object to another folder.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold; text-decoration: underline;">Picture</span>: A menu appears to manage the attached <a href="camera.htm" class="topiclink">picture</a>.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Select</span>: Switch to object marking mode. A check mark appears at the bottom left of the graph: <img alt="_spg_mark" width="140" height="124" style="margin:0;width:140px;height:124px;border:none" src="_spg_mark.png"/><span class="f_ImageCaption">. </span>Select by tapping all objects, with which the group operation will be performed, and tap the symbol with three vertical dots in the upper right corner of the screen: <img alt="_spg_more" width="360" height="52" style="margin:0;width:360px;height:52px;border:none" src="_spg_more.png"/></p>
+<p class="p_Normal" style="margin: 0 0 2px 0;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 2px 0;">A dropdown menu will appear:</p>
+<p class="p_Normal" style="margin: 0 0 2px 0;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Select all</span>: Mark all objects in the library.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Invert selection</span>: Make unmarked objects marked and marked ones unmarked.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Delete selected</span>: Delete marked objects after confirmation.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Export selected</span>: <a href="export_import.htm" class="topiclink">Export</a> all the selected objects. </p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Move to folder</span>: <a href="folders.htm" class="topiclink">Move</a> the selected spectra and/or folders to another folder.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Sorting</span>: Select the sorting mode for objects in the list - by name/date, ascending/descending.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Cancel</span>: Unselect all objects and exit the mode. The same is done with the “Back” button on the smartphone.</p>
+<p class="p_Normal" style="margin: 0 0 2px 0;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 2px 0;"><span style="text-decoration: underline;">For spectra, there are additional items in the menu:</span></p>
+<p class="p_Normal" style="margin: 0 0 2px 0;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Merge selected</span>: Perform the operation of channel-by-channel addition of the data of the selected spectra. Only spectra obtained with the same device can be combined. RadiaCode-10X. A new spectrum is created, you are prompted to enter its name for saving in the spectra library. The number of pulses of each channel of the combined spectrum is the sum of the number of pulses in the corresponding channels of the combined spectra. The accumulation time is calculated in the same way.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 2px 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Edit calib. coeffs</span>: A dialog window opens, where you can set the calibration factors for all selected spectra. This can be useful if the device, with which the spectra were taken, was recalibrated.</p>
+<p class="p_Normal" style="margin: 0 0 2px 0;">&nbsp;</p>
+<p class="p_Normal"><span style="text-decoration: underline;">Additional items in the track library menu, if several are selected:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Merge Selected</span>: Merge the selected tracks into one. The tracks are merged without any checks. You are prompted to select a name for the merged track and open it on the map.</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+
+
+function normHeaders() {
+ var topicHeadHeight =  $("#idheaderbg > table").first().height() + 1,
+	 $topicHeaderBox = $("#idheader"),
+	 $topicContentBox = $("#idcontent"),
+	 $navHeader = $("#navbar", parent.document),			 
+	$navBox = $("div#hmnavframe", parent.document),
+	 navHeaderHeight = $navHeader.height();
+ if (topicHeadHeight != navHeaderHeight) {
+	 $navHeader.css("height",topicHeadHeight + "px");
+	 $navBox.css("top", topicHeadHeight + "px");
+	 $topicHeaderBox.css("height", topicHeadHeight + "px");
+		if ($topicHeaderBox.css("position") == "fixed"){
+			$topicContentBox.css("margin-top", topicHeadHeight + "px");
+			}
+		}
+    }
+			 
+  $(document).ready(function(){
+    $(window).on('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+		$('.hmanchor').css('padding-top', y+20);
+		$("div#hmsplitter", parent.document).css('width', '3px');
+      }
+	normHeaders();
+    });
+    
+	 $(window).resize(); //trigger event for initially small displays
+  });
+ 
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

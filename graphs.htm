@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Main Screen &gt; Graph displaying</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="The count rate and dose rate graphs display data and are operated in the same way." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        min-height: 60px; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        background: #F0F0F0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { min-height: 59px;}             
+      #idheader h1 span { color: #000000 }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_white.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_grey.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_yellow.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; }
+	  p.help-url a:link { font-size: 50%; text-decoration: none; color: black; }
+	  p.help-url a:visited { color: black; }
+	  p.help-url a:hover { font-size: 95%; text-decoration: underline; }
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #000000; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #000000; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #000000; }
+      .sync-toc a:hover { text-decoration: underline; }
+	  a#printbuttonlink { cursor: pointer; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em; }  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "graphs.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Graph displaying</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:middle">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?graphs.htm" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="main_screen.htm">Main Screen</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Graph displaying</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="main_screen.htm" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="main_screen.htm" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="iso_hardness.htm" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">The count rate and dose rate graphs display data and are operated in the same way.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="_DoseRate" width="200" height="184" style="float:left;margin:0 10px 10px 0;width:200px;height:184px;border:none" src="_doserate.png"/>If the graph displays the most recent data corresponding to real time, then on the right, in gray, operational data is displayed that was read by the device from its sensor, but was not yet processed (data processing and filtering algorithms need to accumulate a certain amount of data). Already processed and filtered values ​​are displayed on the graphs in green/blue. Live data is stored for the last 10 minutes.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">One can control the live data filter that is displayed on the graph. You can set the width of the filtering window in the graph settings, i.e. the time over which the data is averaged. <span style="font-weight: bold;">Such averaging is performed by the device, serves only to display operational data</span> and is not related to data processing by the device, as a result of which the values displayed by color graphs are calculated.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">On the dose rate graph, vertical colored lines with a circle at the top show the moments when alarms occurred. These lines can be disabled in the graph settings.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_SubTitle"><span class="f_SubTitle">Scale selection</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The displayed data can be displayed in linear, logarithmic and quadratic scales. The current scale name is displayed at the top left of the graph; it is the square root in the example. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The scale can be changed either explicitly in <a href="graph_settings.htm" class="topiclink">graph settings,</a>, which are called by the button <img alt="ic_live_settings" width="15" height="15" style="margin:0;width:15px;height:15px;border:none" src="ic_live_settings.png"/>, or by double-tapping the graph. You can set your own scale for each graph.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_SubTitle"><span class="f_SubTitle">Y-axis zooming</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">By default, the displayed plot area fills the entire area visible in the window along the Y axis. The horizontal grid always has 8 cells, and the digitization values ​​are calculated dynamically based on the displayed data. It should be borne in mind that two additional points are involved in determining the maximum and minimum values ​​of the visible area: one beyond the left border of the area and one beyond the right.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can select automatic scaling along the Y-axis both in the current visible area and in the entire range of data available to the application in the graph settings. Each graph (count rate, dose rate) has its own setting.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Graphs can be moved along the Y-axis (up/down) by swiping your finger across the screen. Initially, to switch from automatic scaling to manual scaling, you need to move the graph up or down vigorously enough (protection against accidental shift during paging). In this case, automatic scaling is disabled, and the graph can be precisely positioned with gestures in order, for example, to find out the values ​​in peaks.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With the pinch gesture on the screen, you can stretch and shrink graphs both vertically and horizontally. When pinching vertically, the auto zoom mode is also disabled.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The “A” button is both an indicator of the current zoom mode and a means of returning to the last auto zoom mode selected. The icon on the button corresponds to the selected mode:</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:solid 3px #c0c0c0; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:31px; padding:4px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_auto_visible" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="ic_auto_visible.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1131px; padding:4px; border:solid thin #c0c0c0;"><p class="p_Normal">Automatic scaling over the visible area.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:31px; padding:4px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_auto_full" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="ic_auto_full.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1131px; padding:4px; border:solid thin #c0c0c0;"><p class="p_Normal">Automatic scaling over the entire data range.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:31px; padding:4px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_auto_off" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="ic_auto_off.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1131px; padding:4px; border:solid thin #c0c0c0;"><p class="p_Normal">Manual zooming. Tapping the button returns to the last autoscaling mode selected in the settings.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:31px; padding:4px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><img alt="ic_auto_auto" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="ic_auto_auto.png"/></p>
+</td>
+<td style="vertical-align:middle; width:1131px; padding:4px; border:solid thin #c0c0c0;"><p class="p_Normal">Both graphs are present on the screen and their scaling modes do not match. Tapping the button returns the last autoscaling mode selected in the settings for each graph.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In <a href="graph_settings.htm" class="topiclink">graph settings,</a> you can disable the transition to the manual scaling mode. In this case, attempts to shift the graphs and pinch along the Y axis are ignored, and the “A” button is highlighted in red.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_SubTitle"><span class="f_SubTitle">X-axis zooming</span></p>
+<p class="p_Normal">Scaling of graphs along the X axis (time axis) is performed either by using the buttons <img alt="ic_zoom_in" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="ic_zoom_in.png"/> and <img alt="ic_zoom_out" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="ic_zoom_out.png"/><span class="f_ImageCaption">,</span> or a pinch gesture. A long tap of the button increases the zoom to the maximum or decreases to the minimum.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_SubTitle"><span class="f_SubTitle">Scrolling</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Scrolling graphs horizontally is performed by usual gestures, as well as buttons <img alt="ic_prev" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="ic_prev.png"/> and <img alt="ic_next" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="ic_next.png"/><span class="f_ImageCaption">.</span> &nbsp;The buttons search for the previous/next piece of data after a break in time.</p>
+<p class="p_Normal">A long tap of the button moves to the very beginning or, respectively, to the very end of the graph. The data is displayed in certain portions. When the limit is reached, a new piece of data is loaded from the database.</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+
+
+function normHeaders() {
+ var topicHeadHeight =  $("#idheaderbg > table").first().height() + 1,
+	 $topicHeaderBox = $("#idheader"),
+	 $topicContentBox = $("#idcontent"),
+	 $navHeader = $("#navbar", parent.document),			 
+	$navBox = $("div#hmnavframe", parent.document),
+	 navHeaderHeight = $navHeader.height();
+ if (topicHeadHeight != navHeaderHeight) {
+	 $navHeader.css("height",topicHeadHeight + "px");
+	 $navBox.css("top", topicHeadHeight + "px");
+	 $topicHeaderBox.css("height", topicHeadHeight + "px");
+		if ($topicHeaderBox.css("position") == "fixed"){
+			$topicContentBox.css("margin-top", topicHeadHeight + "px");
+			}
+		}
+    }
+			 
+  $(document).ready(function(){
+    $(window).on('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+		$('.hmanchor').css('padding-top', y+20);
+		$("div#hmsplitter", parent.document).css('width', '3px');
+      }
+	normHeaders();
+    });
+    
+	 $(window).resize(); //trigger event for initially small displays
+  });
+ 
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>
